@@ -9,7 +9,7 @@ export const getMe = async (req, res) => {
     let user = await User.findOneAndUpdate(
       { clerkId },
       { lastSeen: new Date() },
-      { new: true }
+      { returnDocument: "after" }
     );
 
     // First login: fetch details from Clerk and create the user
@@ -37,7 +37,7 @@ export const getMe = async (req, res) => {
           },
           $set: { lastSeen: new Date() },
         },
-        { new: true, upsert: true }
+        { returnDocument: "after", upsert: true }
       );
     }
 
