@@ -6,12 +6,6 @@ A real-time chat web app. Sign in, find people by name or email, and chat live w
 
 > The backend runs on a free hosting plan and sleeps when idle. The first load after a break can take about 30 seconds.
 
-## Screenshots
-
-| Chat list with unread badge | Photo in a chat | Phone view |
-| --- | --- | --- |
-| ![Chat list](docs/screenshots/chat-list.png) | ![Photo chat](docs/screenshots/chat-photo.png) | ![Phone](docs/screenshots/mobile.png) |
-
 ## Features
 
 - **Authentication** with Clerk: sign up, sign in, sign out, protected routes, profile page
